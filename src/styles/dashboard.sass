@@ -1,0 +1,30 @@
+@use 'variables' as v
+
+.dashboard h1
+  margin-bottom: 20px
+
+.cards
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: 20px
+
+.card
+  padding: 20px
+  border-radius: 6px
+  color: white
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 120px
+
+.primary
+  background: v.$primary
+
+.warning
+  background: v.$warning
+
+.success
+  background: v.$success
+
+.danger
+  background: v.$danger
