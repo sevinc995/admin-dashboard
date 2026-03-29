@@ -1,5 +1,8 @@
 import AreaChart from "../components/AreaChart"
 import BarChart from "../components/BarChart"
+import DataTable from "../components/DataTable"
+<DataTable />
+
 
 function Dashboard() {
   return (
@@ -46,6 +49,9 @@ function Dashboard() {
         </div>
 
       </div>
+
+      {/* ✅ BURADA olmalıdır */}
+      <DataTable />
 
     </div>
   )
