@@ -7,6 +7,12 @@ import ca from "../assets/flags/ca.png"
 import vn from "../assets/flags/vn.png"
 import br from "../assets/flags/br.png"
 import mex from "../assets/flags/mex.png"
+import us from "../assets/flags/us.png"
+import inFlag from "../assets/flags/inFlag.png"
+import idFlag from "../assets/flags/idFlag.png"
+import tv from "../assets/flags/tv.svg"
+import ch from "../assets/flags/ch.png"
+import "../styles/dashboard.sass"
 
 const data = [
     { id: 1, country: "Russia", flag: ru, area: "17,075,200", population: "146,989,754" },
@@ -17,7 +23,14 @@ const data = [
     { id: 5, country: "Canada", flag: ca, area: "9,984,670", population: "38,048,738" },
     { id: 6, country: "Vietnam", flag: vn, area: "331,212", population: "97,468,029" },
     { id: 7, country: "Brazil", flag: br, area: "8,515,767", population: "212,559,417" },
-    { id: 8, country: "Mexico", flag: mex, area: "1,964,375", population: "128,932,753" }
+    { id: 8, country: "Mexico", flag: mex, area: "1,964,375", population: "128,932,753" },
+
+    { id: 9, country: "United States", flag: us, area: "9,629,091", population: "324,459,463" },
+    { id: 10, country: "India", flag: inFlag, area: "3,287,263", population: "1,324,171,354" },
+    { id: 11, country: "Indonesia", flag: idFlag, area: "1,910,931", population: "263,991,379" },
+    { id: 12, country: "Tuvalu", flag: tv, area: "26", population: "11,097" },
+
+    { id: 13, country: "Chaina", flag: ch, area: "9,596,960", population: "1,409,517,397" }
 ]
 
 function DataTable() {
@@ -43,10 +56,20 @@ function DataTable() {
 
             <div className="table-search">
                 <span>Full text search:</span>
-                <input
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                />
+
+                <div style={{ border: "2px solid red", padding: "10px" }}>
+                    <input style={{ paddingRight: "30px" }} />
+
+                    <span
+                        style={{
+                            position: "absolute",
+                            right: "25px",
+                            top: "5px"
+                        }}
+                    >
+                        🔍
+                    </span>
+                </div>
             </div>
 
             <table>

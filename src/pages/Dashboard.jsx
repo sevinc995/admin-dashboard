@@ -1,6 +1,7 @@
 import AreaChart from "../components/AreaChart"
 import BarChart from "../components/BarChart"
 import DataTable from "../components/DataTable"
+
 <DataTable />
 
 
