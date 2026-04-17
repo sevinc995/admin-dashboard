@@ -57,18 +57,10 @@ function DataTable() {
             <div className="table-search">
                 <span>Full text search:</span>
 
-                <div style={{ border: "2px solid red", padding: "10px" }}>
+                <div>
                     <input style={{ paddingRight: "30px" }} />
 
-                    <span
-                        style={{
-                            position: "absolute",
-                            right: "25px",
-                            top: "5px"
-                        }}
-                    >
-                        🔍
-                    </span>
+                    
                 </div>
             </div>
 

@@ -1,3 +1,4 @@
+import { color } from "chart.js/helpers"
 import AreaChart from "../components/AreaChart"
 import BarChart from "../components/BarChart"
 import DataTable from "../components/DataTable"
@@ -51,7 +52,7 @@ function Dashboard() {
 
       </div>
 
-      {/* ✅ BURADA olmalıdır */}
+      {}
       <DataTable />
 
     </div>
